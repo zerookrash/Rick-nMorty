@@ -1,0 +1,12 @@
+.card {
+    max-width: 540px;
+    max-height: 600px;
+}
+
+.card-img {
+    height: 100%;
+}
+
+.card-img:hover {
+    opacity: 0.6;
+}

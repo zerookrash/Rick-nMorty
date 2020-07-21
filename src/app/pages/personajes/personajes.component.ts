@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PersonajesService } from '../../services/personajes.service';
 
 @Component({
   selector: 'app-personajes',
@@ -6,10 +7,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./personajes.component.css']
 })
 export class PersonajesComponent implements OnInit {
-
-  constructor() { }
+personajes;
+char;
+  constructor( private characters: PersonajesService) { }
 
   ngOnInit(): void {
+    this.getListCharacters();
+  }
+
+  getListCharacters(): void {
+    this.characters.getAllCharacters()
+      .subscribe((characters) => {
+        this.char = characters;
+        this.personajes = this.char.results;
+      });
   }
 
 }
