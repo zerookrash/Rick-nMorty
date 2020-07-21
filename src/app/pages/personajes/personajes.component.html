@@ -12,7 +12,11 @@
                         <h5 class="card-title"> {{personaje.name}} </h5>
                         <p class="card-text">Origen.</p>
                         <p class="card-text"> {{personaje.origin.name}} </p>
-                        <button class="btn btn-outline-info btn-sm">Mas Información</button>
+                        <button 
+                            class="btn btn-outline-info btn-sm"
+                            [routerLink]="['/personaje', personaje.id]">
+                            Mas Información
+                        </button>
                     </div>
                     </div>
                 </div>
