@@ -1,0 +1,20 @@
+.img {
+    background-image: url('https://www.ecestaticos.com/imagestatic/clipping/54c/9cc/54c9cc2a21620e8e70fbaf8fb06b89e2/frases-de-amistad-ideas-bonitas-originales-y-divertidas-para-los-mejores-amigos.jpg?mtime=1579565836');
+    height: 50em;
+    color: #ffffff;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    position: relative;
+}
+
+.img .display {
+    margin-top: 3%;
+}
+
+.img .lead {
+    color: #cfcfcf;
+    position: absolute;
+    bottom: 0;
+    left: 10em;
+}
