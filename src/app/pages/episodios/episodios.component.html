@@ -1,1 +1,24 @@
-<p>episodios works!</p>
+<div class="container">
+
+    <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-12" *ngFor="let episodio of episodios">
+            <div class="card mb-3">
+                <div class="row no-gutters">
+                    <div class="col-md-12">
+                        <div class="card-body">
+                            <h5 class="card-title"> {{episodio.name}} </h5>
+                            <p class="card-text">Fecha de Emision.</p>
+                            <p class="card-text"> {{episodio.air_date}} </p>
+                            <button 
+                                class="btn btn-outline-info btn-sm"
+                                [routerLink]="['/episodio', episodio.id]">
+                                Mas Información
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,40 @@
+<div class="container text-center">
+    <div class="spinner-border text-primary" role="status" *ngIf = '!cargado'>
+        <span class="sr-only">Loading...</span>
+    </div>
+
+    <div class="row">
+        <table class="table table-striped" *ngIf = 'cargado'>
+            <thead>
+                <tr>
+                <th scope="col"></th>
+                <th scope="col">Episodio</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <th scope="row">ID</th>
+                <td>{{episodio.id}}</td>
+                </tr>
+                <tr>
+                <th scope="row">Creado</th>
+                <td>{{episodio.created | date}}</td>
+                </tr>
+                <tr>
+                <th scope="row">Nombre</th>
+                <td>{{episodio.name}}</td>
+                </tr>
+                <tr>
+                <th scope="row">Episodio</th>
+                <td>{{episodio.episode}}</td>
+                </tr>
+                <tr>
+                <th scope="row">URL</th>
+                <td><a href="{{episodio.url}}">{{episodio.url}}</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <button class="btn btn-outline-info" routerLink='/episodios' *ngIf = 'cargado'>Regresar</button>
+</div>

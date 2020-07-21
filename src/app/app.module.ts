@@ -10,12 +10,14 @@ import { RegitroComponent } from './pages/regitro/regitro.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { PagenofoundComponent } from './pages/pagenofound/pagenofound.component';
+import { PersonajeComponent } from './pages/personaje/personaje.component';
 
 import { HttpClientModule } from '@angular/common/http';
 
 // Servicios
 import { PersonajesService } from './services/personajes.service';
-import { PersonajeComponent } from './pages/personaje/personaje.component';
+import { EpisodiosService } from './services/episodios.service';
+import { EpisodioComponent } from './pages/episodio/episodio.component';
 
 
 @NgModule({
@@ -28,7 +30,8 @@ import { PersonajeComponent } from './pages/personaje/personaje.component';
     NavbarComponent,
     FooterComponent,
     PagenofoundComponent,
-    PersonajeComponent
+    PersonajeComponent,
+    EpisodioComponent
   ],
   imports: [
     BrowserModule,
@@ -36,7 +39,8 @@ import { PersonajeComponent } from './pages/personaje/personaje.component';
     HttpClientModule
   ],
   providers: [
-    PersonajesService
+    PersonajesService,
+    EpisodiosService
   ],
   bootstrap: [AppComponent]
 })

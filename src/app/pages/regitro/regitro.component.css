@@ -1,0 +1,50 @@
+.form-container {
+    font: 95% Arial, Helvetica, sans-serif;
+    max-width: 700px;
+    padding: 16px;
+    margin: 10px auto;
+    background: #f7f7f7;
+}
+
+.form-container h1 {
+    background: #43d1af;
+    padding: 20px 0;
+    font-size: 140%;
+    font-weight: 300;
+    text-align: center;
+    color: #fff;
+    max-width: -16px -16px 16px -16px;
+}
+
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="password"] {
+    transition: all 0, 30s ease-in-out;
+    outline: none;
+    box-sizing: border-box;
+    width: 100%;
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 4%;
+    margin-top: 2%;
+    color: #555;
+    font: 95% Arial, Helvetica, sans-serif;
+}
+
+.form-container .btn-send {
+    margin-top: 3%;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 3%;
+    background: #43d1af;
+    border-bottom: 2px solid #30c29e;
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;
+    color: #fff;
+    font-size: 20px;
+}
+
+.form-container .btn-send:hover {
+    background: #2ebc99;
+}

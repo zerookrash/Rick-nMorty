@@ -22,5 +22,4 @@ char;
         this.personajes = this.char.results;
       });
   }
-
 }

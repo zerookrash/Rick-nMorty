@@ -5,19 +5,19 @@
             <div class="card mb-3">
                 <div class="row no-gutters">
                     <div class="col-md-6">
-                    <img src="{{personaje.image}}" class="card-img" alt="...">
+                        <img src="{{personaje.image}}" class="card-img" alt="...">
                     </div>
                     <div class="col-md-6">
-                    <div class="card-body">
-                        <h5 class="card-title"> {{personaje.name}} </h5>
-                        <p class="card-text">Origen.</p>
-                        <p class="card-text"> {{personaje.origin.name}} </p>
-                        <button 
-                            class="btn btn-outline-info btn-sm"
-                            [routerLink]="['/personaje', personaje.id]">
-                            Mas Información
-                        </button>
-                    </div>
+                        <div class="card-body">
+                            <h5 class="card-title"> {{personaje.name}} </h5>
+                            <p class="card-text">Origen.</p>
+                            <p class="card-text"> {{personaje.origin.name}} </p>
+                            <button 
+                                class="btn btn-outline-info btn-sm"
+                                [routerLink]="['/personaje', personaje.id]">
+                                Mas Información
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>

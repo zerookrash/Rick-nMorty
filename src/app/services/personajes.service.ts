@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs/internal/Observable';
 
 @Injectable({
@@ -18,6 +18,7 @@ export class PersonajesService {
     return this.http.get(urlApi);
   }
 
+  // Personaje
   getCharacterById(id: string) {
     const urlApi = `https://rickandmortyapi.com/api/character/${id}`;
     return (this.character = this.http.get(urlApi));
