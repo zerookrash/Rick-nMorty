@@ -13,6 +13,7 @@ import { PagenofoundComponent } from './pages/pagenofound/pagenofound.component'
 import { PersonajeComponent } from './pages/personaje/personaje.component';
 
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 // Servicios
 import { PersonajesService } from './services/personajes.service';
@@ -36,7 +37,9 @@ import { EpisodioComponent } from './pages/episodio/episodio.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [
     PersonajesService,

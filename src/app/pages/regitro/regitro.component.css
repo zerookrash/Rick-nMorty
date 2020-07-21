@@ -48,3 +48,7 @@
 .form-container .btn-send:hover {
     background: #2ebc99;
 }
+
+.container-erro-message {
+    padding: 3px;
+}
