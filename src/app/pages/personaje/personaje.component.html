@@ -3,36 +3,43 @@
         <span class="sr-only">Loading...</span>
     </div>
 
-    <table class="table table-striped" *ngIf = 'cargado'>
-        <thead>
-          <tr>
-            <th scope="col"></th>
-            <th scope="col">Personaje</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">ID</th>
-            <td>{{personaje.id}}</td>
-          </tr>
-          <tr>
-            <th scope="row">Creado</th>
-            <td>{{personaje.created | date}}</td>
-          </tr>
-          <tr>
-            <th scope="row">Nombre</th>
-            <td>{{personaje.name}}</td>
-          </tr>
-          <tr>
-            <th scope="row">Genero</th>
-            <td>{{personaje.gender}}</td>
-          </tr>
-          <tr>
-            <th scope="row">Especie</th>
-            <td>{{personaje.species}}</td>
-          </tr>
-        </tbody>
-    </table>
+    <div class="row">
+        <div class="col-12 col-lg-6 col-md-6 col-sm-12">
+            <img src="{{personaje.image}}" class="card-img" alt="...">
+        </div>
+        <div class="col-12 col-lg-6 col-md-6 col-sm-12">
+            <table class="table table-striped" *ngIf = 'cargado'>
+                <thead>
+                  <tr>
+                    <th scope="col"></th>
+                    <th scope="col">Personaje</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">ID</th>
+                    <td>{{personaje.id}}</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Creado</th>
+                    <td>{{personaje.created | date}}</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Nombre</th>
+                    <td>{{personaje.name}}</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Genero</th>
+                    <td>{{personaje.gender}}</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Especie</th>
+                    <td>{{personaje.species}}</td>
+                  </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
 
     <button class="btn btn-outline-info" routerLink='/personajes' *ngIf = 'cargado'>Regresar</button>
 </div>
